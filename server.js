@@ -1,4 +1,5 @@
 import express from 'express';
+import { db } from './config/db.config.js';
 
 import dotenv from 'dotenv';
 dotenv.config()
@@ -9,6 +10,8 @@ const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
-app.listen(3000, () => {
-    console.log(`Server is running on port: ${PORT}`)
+db()
+
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port: ${process.env.PORT}`)
 })
