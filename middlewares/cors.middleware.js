@@ -1,8 +1,7 @@
-
-
-export const corsOptions={
-    origin:[
-        'http://localhost:3000/'
-    ],
-    optionsSucessStatus: 200
-}
+// cors.middleware.js
+export const corsOptions = {
+    origin: 'http://localhost:4000',
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    optionsSuccessStatus: 200,
+  };
+  

@@ -17,7 +17,7 @@ app.use(express.urlencoded({extended:true}))
 //middlewares CORS
 app.use(cors(corsOptions));
 //Middlewares de rutas
-app.use('/api/v1', userRouter)
+app.use('/api/v1', userRouter);
 
 
 

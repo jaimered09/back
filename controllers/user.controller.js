@@ -21,7 +21,7 @@ export const getUserByRut = async (req, res) => {
     }
 }
 
-export const signUp = async (req, res) => { //createUser
+export const signUp = async (req, res) => { //crearUser
     try {
         const { nombre, apellido, rut, edad, correo, password } = req.body
 
